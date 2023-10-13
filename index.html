@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="game-container">
+        <h1>Challenger</h1>
+        <p>Score: <span id="score-count" class="score"></span></p>
+        <p>Clicks: <span id="click-count"></span></p>
+        <button id="click-button" class="Btn" onclick="clicked()">
+          Klikkaa Minua!
+        </button>
+      </div>
+      <div id="option-container">
+        <!-- Vaihtoehtopainikkeet -->
+        <button id="2x-button" class="OptionBtn" onclick="buyOption(2)">
+          2x (Cost: 50)
+        </button>
+        <button id="3x-button" class="OptionBtn" onclick="buyOption(3)">
+          3x (Cost: 100)
+        </button>
+        <button id="4x-button" class="OptionBtn" onclick="buyOption(4)">
+          4x (Cost: 250)
+        </button>
+        <button id="5x-button" class="OptionBtn" onclick="buyOption(5)">
+          5x (Cost: 500)
+        </button>
+      </div>
+    </div>
+
+    <audio id="click-sound">
+      <source
+        src="./media/mixkit-fantasy-sword-slide-2798.wav"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="option-sound">
+      <source
+        src="./media/mixkit-metallic-sword-strike-2160.wav"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
